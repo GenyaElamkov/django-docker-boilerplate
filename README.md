@@ -47,8 +47,8 @@ make app
 ├── core/                         # Основное приложение
 │   ├── apps/                     # Приложение
 │   ├─────── products/
-│   └── project/                  # Конфиг для Django
-│   ├─────── settings/
+│   ├── project/                  # Конфиг для Django
+│   └─────── settings/
 ├── docker_compose/               # Конфиги Docker Compose
 │   ├── app.yaml                  # Для приложения
 │   └── storages.yaml             # Для хранилища
