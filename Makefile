@@ -27,11 +27,11 @@ postgres:
 
 .PHONY: app
 app:
-		$(DC) -f $(APP_FILE) -f $(STORAGES_FILE) $(ENV) up -d
+	$(DC) -f $(APP_FILE) -f $(STORAGES_FILE) $(ENV) up -d
 
 .PHONY: app-logs
 app-logs:
-		$(LOGS) $(APP_CONTAINER) -f 
+	$(LOGS) $(APP_CONTAINER) -f 
 
 .PHONY: app-down
 app-down:
