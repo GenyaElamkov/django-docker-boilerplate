@@ -9,6 +9,7 @@ wheels/
 # Virtual environments
 .venv
 .env
+!.env.example
 core/project/settings/local.py
 static/*
 !static/.gitkeep
