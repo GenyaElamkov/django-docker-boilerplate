@@ -37,6 +37,10 @@ app-logs:
 app-down:
 	$(DC) -f $(APP_FILE) -f $(STORAGES_FILE) $(ENV) down
 
+.PHONY: app-img-down
+app-img-down:
+	$(DC) -f $(APP_FILE) -f $(STORAGES_FILE) down -v
+
 .PHONY: migrate
 migrate:
 	$(EXEC) $(APP_CONTAINER) $(MANAGE_PY) migrate 
