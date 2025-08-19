@@ -27,7 +27,7 @@ postgres:
 
 .PHONY: app
 app:
-	$(DC) -f $(APP_FILE) -f $(STORAGES_FILE) $(ENV) up -d
+	$(DC) -f $(APP_FILE) -f $(STORAGES_FILE) $(ENV) up -d --build
 
 .PHONY: app-logs
 app-logs:
